@@ -1,7 +1,7 @@
 # Advent of code 2020
 
 ## Prerequisite
-Must have `gnu-sed`. For mac users, install `gnu-sed` with `brew`.
+Must have `gnu-sed` to run `yarn test` or `yarn start`. For mac users, install `gnu-sed` with `brew`.
 
 ## Running the code
 Running tests for challenge 1:
