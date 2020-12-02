@@ -1,4 +1,4 @@
-import { getTrippleSum } from './get_tripple_sum'
+import { getTrippleSum } from './getTrippleSum'
 
 describe('getTrippleSum', () => {
   it('should find 3 numbers with sum 2020 in a small set', () => {

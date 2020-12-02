@@ -3,4 +3,4 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-npx jest --testRegex "src/.*$1/.*spec.*\\.ts"
+npx jest --testRegex "src/.*$1/.*Spec.*\\.ts"
