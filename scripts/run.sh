@@ -1,7 +1,7 @@
-challenge=`echo "$1" | sed "s/[^1-9]//g"`
+puzzle=`echo "$1" | sed "s/[^1-9]//g"`
 if [ -z "$1" ]; then
-  echo "Missing challenge arg"
+  echo "Missing puzzle arg"
   exit 1
 fi
 
-npx ts-node "src/$challenge/$1.ts"
+npx ts-node "src/$puzzle/$1.ts"

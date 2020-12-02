@@ -1,5 +1,5 @@
 if [ -z "$1" ]; then
-  echo "Missing challenge arg"
+  echo "Missing puzzle arg"
   exit 1
 fi
 
