@@ -1,4 +1,4 @@
-export const input = [
+export const input1 = [
   1975,
   1446,
   1902,

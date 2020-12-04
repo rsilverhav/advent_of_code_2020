@@ -1,4 +1,4 @@
 import { getPairSum } from './getPairSum'
-import { input } from './input'
+import { input1 } from './input_1'
 
-console.log(getPairSum(2020, input))
+console.log(getPairSum(2020, input1))

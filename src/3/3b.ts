@@ -1,4 +1,4 @@
-import { input } from './input'
+import { input3 } from './input_3'
 import { walkToBottom } from './walkToBottom'
 
 const results: number[] = []
@@ -11,6 +11,6 @@ const slopes = [
 ]
 
 for (const slope of slopes) {
-  results.push(walkToBottom(input, slope))
+  results.push(walkToBottom(input3, slope))
 }
 console.log(results.reduce((all, next) => all * next, 1))

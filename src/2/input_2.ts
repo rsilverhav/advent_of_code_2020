@@ -1,4 +1,4 @@
-export const input = [
+export const input2 = [
   '4-6 b: bbbdbtbbbj',
   '1-6 g: ggvggbgggstg',
   '1-4 s: lssss',

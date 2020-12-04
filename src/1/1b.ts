@@ -1,4 +1,4 @@
 import { getTrippleSum } from './getTrippleSum'
-import { input } from './input'
+import { input1 } from './input_1'
 
-console.log(getTrippleSum(2020, input))
+console.log(getTrippleSum(2020, input1))
