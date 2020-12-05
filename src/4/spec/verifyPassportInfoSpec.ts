@@ -1,5 +1,5 @@
-import { noValueValidator, valueValidator } from './passPortValidators'
-import { verifyPasspostInfo } from './verifyPassportInfo'
+import { noValueValidator, valueValidator } from '../passPortValidators'
+import { verifyPasspostInfo } from '../verifyPassportInfo'
 
 describe('verifyPasspostInfo', () => {
   describe('no value validation', () => {

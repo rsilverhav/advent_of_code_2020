@@ -1,4 +1,4 @@
-import { isValidHeight } from './isValidHeight'
+import { isValidHeight } from '../isValidHeight'
 
 describe('isValidHeight', () => {
   const allTestData: { height: string; expectedResult: boolean }[] = [

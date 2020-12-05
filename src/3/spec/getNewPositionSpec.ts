@@ -1,4 +1,4 @@
-import { getNewPosition } from './getNewPosition'
+import { getNewPosition } from '../getNewPosition'
 
 describe('getNewPosition', () => {
   const testMap = [

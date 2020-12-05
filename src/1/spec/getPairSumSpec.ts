@@ -1,4 +1,4 @@
-import { getPairSum } from './getPairSum'
+import { getPairSum } from '../getPairSum'
 
 describe('1', () => {
   it('should find the matching value to reach 2020 from small set of numbers', () => {

@@ -1,4 +1,4 @@
-import { isValidYear } from './isValidYear'
+import { isValidYear } from '../isValidYear'
 
 describe('isValidYear', () => {
   it('2002 should be valid', () => {

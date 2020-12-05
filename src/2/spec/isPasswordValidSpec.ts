@@ -1,4 +1,4 @@
-import { isPasswordValid } from './isPasswordValid'
+import { isPasswordValid } from '../isPasswordValid'
 
 describe('isPasswordValid', () => {
   it('should return true for 1-3 a: abcde', () => {

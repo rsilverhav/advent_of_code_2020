@@ -1,4 +1,4 @@
-import { isPasswordPositionValid } from './isPasswordPositionValid'
+import { isPasswordPositionValid } from '../isPasswordPositionValid'
 
 describe('isPasswordPositionValid', () => {
   it('should return true for 1-3 a: abcde', () => {

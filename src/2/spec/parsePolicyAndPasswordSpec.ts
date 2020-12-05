@@ -1,4 +1,4 @@
-import { parsePolicyAndPassword } from './parsePolicyAndPassword'
+import { parsePolicyAndPassword } from '../parsePolicyAndPassword'
 
 describe('parsePolicyAndPassword', () => {
   it('should get parse 1-3 a: abcde corectly', () => {

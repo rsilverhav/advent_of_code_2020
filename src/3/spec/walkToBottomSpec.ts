@@ -1,4 +1,4 @@
-import { walkToBottom } from './walkToBottom'
+import { walkToBottom } from '../walkToBottom'
 
 describe('walkToBottom', () => {
   const testMap = [
