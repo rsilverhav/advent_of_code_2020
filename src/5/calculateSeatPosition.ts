@@ -1,6 +1,6 @@
 import { binarySearch } from './binarySearch'
 
-export function calculateSeatId(seatNumber: string) {
+export function calculateSeatPosition(seatNumber: string): { row: number; col: number } {
   const row = binarySearch({
     seatNumbers: seatNumber.replace(/[^FB]/g, ''),
     min: 0,
@@ -16,5 +16,5 @@ export function calculateSeatId(seatNumber: string) {
     highChar: 'R',
   })
 
-  return row * 8 + col
+  return { row, col }
 }
