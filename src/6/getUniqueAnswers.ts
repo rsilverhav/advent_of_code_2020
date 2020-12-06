@@ -1,3 +1,3 @@
-export function getUniqueAnswers(answers: string): number {
-  return new Set(Array.from(answers.replace(/\n/g, ''))).size
+export function getUniqueAnswers(groupAnswers: string): number {
+  return new Set(Array.from(groupAnswers.replace(/\n/g, ''))).size
 }

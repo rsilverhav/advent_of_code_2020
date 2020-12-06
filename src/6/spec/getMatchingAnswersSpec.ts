@@ -1,6 +1,6 @@
-import { getUniqueAnswers } from '../getUniqueAnswers'
+import { getMatchingAnswers } from '../getMatchingAnswers'
 
-describe('getUniqueAnswers', () => {
+describe('getMatchingAnswers', () => {
   const allTestData: { groupAnswers: string; expected: number }[] = [
     {
       groupAnswers: 'abc',
@@ -10,12 +10,12 @@ describe('getUniqueAnswers', () => {
       groupAnswers: `a
 b
 c`,
-      expected: 3,
+      expected: 0,
     },
     {
       groupAnswers: `ab
 ac`,
-      expected: 3,
+      expected: 1,
     },
     {
       groupAnswers: `a
@@ -32,7 +32,7 @@ a`,
 
   for (const testData of allTestData) {
     it(`should return ${testData.expected} when groupAnswers are ${testData.groupAnswers}`, () => {
-      expect(getUniqueAnswers(testData.groupAnswers)).toBe(testData.expected)
+      expect(getMatchingAnswers(testData.groupAnswers)).toBe(testData.expected)
     })
   }
 })
