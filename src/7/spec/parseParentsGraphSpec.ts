@@ -1,6 +1,6 @@
-import { parseGraph } from '../parseGraph'
+import { parseParentsGraph } from '../parseParentsGraph'
 
-describe('parseGraph', () => {
+describe('parseParentsGraph', () => {
   it('should parse input and return correct node info', () => {
     const input = [
       'light red bags contain 1 bright white bag, 2 muted yellow bags.',
@@ -11,7 +11,7 @@ describe('parseGraph', () => {
       'dotted black bags contain no other bags.',
     ]
 
-    const res = parseGraph(input)
+    const res = parseParentsGraph(input)
 
     const expected: { [key: string]: string[] } = {
       'shiny gold': ['bright white', 'muted yellow'],

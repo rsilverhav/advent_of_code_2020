@@ -1,6 +1,6 @@
 export type Graph = { [key: string]: Set<string> }
 
-export function parseGraph(graphInfo: string[]): Graph {
+export function parseParentsGraph(graphInfo: string[]): Graph {
   const result: { [key: string]: Set<string> } = {}
   for (const nodeInfo of graphInfo) {
     const [name, children] = /(.*) bags contain (.*)\./.exec(nodeInfo)?.slice(1) ?? []

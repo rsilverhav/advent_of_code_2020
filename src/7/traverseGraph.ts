@@ -1,7 +1,7 @@
-import { Graph, parseGraph } from './parseGraph'
+import { Graph, parseParentsGraph } from './parseParentsGraph'
 
 export function traverseGraph(graphInfo: string[], startNode: string): Set<string> {
-  const graph: Graph = parseGraph(graphInfo)
+  const graph: Graph = parseParentsGraph(graphInfo)
   const visited = new Set<string>([])
   const queue = [startNode]
 
