@@ -1,6 +1,6 @@
 import { traverseGraphUniqueBags } from '../traverseGraphUniqueBags'
 
-describe('traverseGraph', () => {
+describe('traverseGraphUniqueBags', () => {
   const input = [
     'light red bags contain 1 bright white bag, 2 muted yellow bags.',
     'dark orange bags contain 3 bright white bags, 4 muted yellow bags.',
