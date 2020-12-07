@@ -1,4 +1,4 @@
-import { traverseGraph } from '../traverseGraph'
+import { traverseGraphUniqueBags } from '../traverseGraphUniqueBags'
 
 describe('traverseGraph', () => {
   const input = [
@@ -10,7 +10,11 @@ describe('traverseGraph', () => {
     'dotted black bags contain no other bags.',
   ]
   it('should return expected visited nodes', () => {
-    const res = traverseGraph(input, 'shiny gold')
+    const res = traverseGraphUniqueBags({
+      graphInfo: input,
+      startNode: 'shiny gold',
+      childrenAsKey: true,
+    })
     expect(Array.from(res).sort((a, b) => a.localeCompare(b))).toEqual([
       'bright white',
       'dark orange',
