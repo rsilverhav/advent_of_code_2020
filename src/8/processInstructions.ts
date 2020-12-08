@@ -1,10 +1,10 @@
-export function processInstructions(instructions: string[]): number {
+export function processInstructions(instructions: string[]): { acc: number; finished: boolean } {
   let acc = 0
   let programCounter = 0
   const visited = new Set<number>([])
   while (programCounter < instructions.length) {
     if (visited.has(programCounter)) {
-      return acc
+      return { acc, finished: false }
     }
     visited.add(programCounter)
     const [op, value] = instructions[programCounter].split(' ')
@@ -24,5 +24,5 @@ export function processInstructions(instructions: string[]): number {
     }
   }
 
-  return acc
+  return { acc, finished: programCounter === instructions.length }
 }

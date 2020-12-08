@@ -14,6 +14,6 @@ describe('processInstructions', () => {
       'acc +6',
     ]
 
-    expect(processInstructions(input)).toBe(5)
+    expect(processInstructions(input)).toEqual({ acc: 5, finished: false })
   })
 })

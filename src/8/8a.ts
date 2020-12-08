@@ -1,4 +1,5 @@
 import { input8 } from './input_8'
 import { processInstructions } from './processInstructions'
 
-console.log('Acc value: ', processInstructions(input8))
+const res = processInstructions(input8)
+console.log('Acc value: ', res.acc)
