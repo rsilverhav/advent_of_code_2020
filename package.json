@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "scripts/run.sh",
-    "test": "scripts/run_test.sh"
+    "test": "scripts/run_test.sh",
+    "test_debug": "npx jest --testRegex \"src/.*Spec.*\\.ts\""
   },
   "author": "",
   "license": "ISC",
